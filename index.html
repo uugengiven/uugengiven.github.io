@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Drinkers</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -47,7 +48,7 @@
         }
         .aboutus {
             width: 100vw;
-            height: 100vh;
+            height: 105vh;
             max-width: 100%;
             background: rgb(104, 104, 104);
             color: rgb(117, 117, 117);
@@ -126,21 +127,42 @@
             vertical-align: super;
         }
         .contact {
-            height: 100vh;
+            height: 65vh;
             width: 100vw;
             max-width: 100%;
             display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            background: #2f2f2f;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background: linear-gradient(60deg, #222, rgb(133, 103, 190));
+            color: white;
+            box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        }
+        .quotes {
+            position: relative;
+            width: 80%;
+            font-family: Tangerine, cursive;
+        }
+        .quote {
+            padding: 1em 2em;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            font-size: 3em;
         }
 
+        .quotequote {
+            font-size: 100px;
+            position: absolute;
+            right: 35px;
+            bottom: -60px;
+        }
         footer {
-            margin: 3em;
-            font-size: 2em;
+            align-self: flex-end;
+            padding-right: 2em;
+        }
+        footer a, footer a:visited, footer a:hover, footer a:active {
             color: white;
         }
-
 
         @keyframes shake {
             0% {transform: rotate(0deg) translate(0%, 0%)}
@@ -187,8 +209,12 @@
         </div>
     </div>
     <div class="contact">
+        <div class="quotes">
+            <div class="quote">HTML-plus-regexp will liquify the nerves of the sentient whilst you observe, your psyche withering in the onslaught of horror.</div>
+            <div class="quotequote">"</div>
+        </div>
         <footer>
-            Follow us on Twitter, Instagram, Facebook, Tik Tok
+            Follow us on <a href="http://academypgh.com">Twitter</a>, <a href="https://flexboxfroggy.com/">Instagram</a>, <a href="https://uugengiven.github.io/">Facebook</a>, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Tik Tok</a>
         </footer>
     </div>
 </body>
